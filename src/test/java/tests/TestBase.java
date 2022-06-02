@@ -10,6 +10,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.util.Map;
+
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 
@@ -20,19 +22,23 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
 
-//        String login = config.login();
-//        String password = config.password();
-//        String selenoidURL = System.getProperty("selenoidURL");
+        String login = config.login();
+        String password = config.password();
+        String selenoidURL = System.getProperty("selenoidURL");
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         Configuration.baseUrl = "https://www.sportmaster.ru";
         Configuration.browserSize = "1920x1080";
-//        Configuration.remote = "https://" + login + ":" + password + "@" + selenoidURL;
+        Configuration.remote = "https://" + login + ":" + password + "@" + selenoidURL;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserVersion", "100.0");
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
         Configuration.browserCapabilities = capabilities;
     }
 
