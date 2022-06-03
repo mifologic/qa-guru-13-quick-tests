@@ -13,15 +13,15 @@
 
 ## Технологии и инструменты
 
-![](/images/icons/Java.svg)
-![](/images/icons/Intelij_IDEA.svg)
-![](/images/icons/Gradle.svg)
-![](/images/icons/JUnit5.svg)
-![](/images/icons/Selenide.svg)
-![](/images/icons/Selenoid.svg)
-![](/images/icons/GitHub.svg)
-![](/images/icons/Allure_Report.svg)
-![](/images/icons/Telegram.svg)
+<img width="6%" src="/images/icons/Java.svg">
+<img width="6%" src="/images/icons/Intelij_IDEA.svg">
+<img width="6%" src="/images/icons/Gradle.svg">
+<img width="6%" src="/images/icons/JUnit5.svg">
+<img width="6%" src="/images/icons/Selenide.svg">
+<img width="6%" src="/images/icons/Selenoid.svg">
+<img width="6%" src="/images/icons/GitHub.svg">
+<img width="6%" src="/images/icons/Allure_Report.svg">
+<img width="6%" src="/images/icons/Telegram.svg">
 
 
 ## Реализованные проверки
@@ -38,16 +38,16 @@ gradle clean test -DselenoidURL={selenoidURL}
 
 ## Сборка в Jenkins
 
-![](/images/reports/jenkins_report.svg)
+![](/images/reports/jenkins_report.png)
 
 ## Allure отчет
 
-![](/images/reports/allure_main.svg)
-![](/images/reports/test_example.svg)
+![](/images/reports/allure_main.png)
+![](/images/reports/test_example.png)
 
 ## Отчет в Telegram
 
-![](/images/reports/telegram_report.svg)
+![](/images/reports/telegram_report.png)
 
 ## Видео пример прохождения теста
 
