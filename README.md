@@ -32,7 +32,7 @@
 - [x] Присоединение к клубной программе 
 
 ## Запуск из командной строки
-gradle clean test -DselenoidURL={selenoidURL}
+`gradle clean test -DselenoidURL={selenoidURL}`
 
 Вместо {selenoidURL} передаётся адрес Selenoid для удалённого запуска тестов.
 
@@ -51,3 +51,4 @@ gradle clean test -DselenoidURL={selenoidURL}
 
 ## Видео пример прохождения теста
 
+![](/images/video.gif)
