@@ -46,10 +46,9 @@
 ![](/images/reports/test_example.png)
 
 ## Отчет в Telegram
-<p align="center">
+
 ![](/images/reports/telegram_report.png)
-</p>
+
 ## Видео пример прохождения теста
-<p align="center">
+
 ![](/images/video.gif)
-</p>
