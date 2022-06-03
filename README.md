@@ -13,6 +13,7 @@
 
 ## Технологии и инструменты
 
+![](img/icons/Java.svg)
 <img width="6%" title="Java" src="img/icons/Java.svg">
 <img width="6%" title="Intelij_IDEA" src="img/icons/Intelij_IDEA.svg">
 <img width="6%" title="Gradle" src="img/icons/Gradle.svg">
