@@ -12,7 +12,7 @@
 
 
 ## Технологии и инструменты
-
+<p align="center">
 <img width="6%" src="/images/icons/Java.svg">
 <img width="6%" src="/images/icons/Intelij_IDEA.svg">
 <img width="6%" src="/images/icons/Gradle.svg">
@@ -22,7 +22,7 @@
 <img width="6%" src="/images/icons/GitHub.svg">
 <img width="6%" src="/images/icons/Allure_Report.svg">
 <img width="6%" src="/images/icons/Telegram.svg">
-
+</p>
 
 ## Реализованные проверки
 - [x] Смена города пользователя
