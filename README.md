@@ -2,7 +2,7 @@
 
 ## Содержание:
 
-* Технологии и инструменты
+* <a href="технологии-и-инструменты">Технологии и инструменты</a>
 * Реализованные проверки
 * Сборка в Jenkins
 * Запуск из терминала
@@ -38,17 +38,24 @@
 
 ## Сборка в Jenkins
 
-![](/images/reports/jenkins_report.png)
+<img src="/images/reports/jenkins_report.png">
 
 ## Allure отчет
+Результат прогона тестов можно посмотреть в отчёте. Информация в тесте представлена в виде шагов с действиями.
 
-![](/images/reports/allure_main.png)
-![](/images/reports/test_example.png)
+<img src="/images/reports/allure_main.png">
+<img src="/images/reports/test_example.png">
 
 ## Отчет в Telegram
+Результат прохождения тестов отправляется в Telegram с помощью бота. Пример сообщения с отчётом:
 
-![](/images/reports/telegram_report.png)
+<p align="center">
+<img src="/images/reports/telegram_report.png">
+</p>
 
 ## Видео пример прохождения теста
+Для каждого теста есть видео с прохождением. Ниже один из примеров:
 
-![](/images/video.gif)
+<p align="center">
+<img src="/images/video.gif">
+</p>
