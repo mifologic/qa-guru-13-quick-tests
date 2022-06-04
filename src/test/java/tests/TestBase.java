@@ -18,13 +18,14 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class TestBase {
 
     static CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
+    static String selenoidURL;
 
     @BeforeAll
     static void setUp() {
 
         String login = config.login();
         String password = config.password();
-        String selenoidURL = System.getProperty("selenoidURL");
+        selenoidURL = System.getProperty("selenoidURL");
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
@@ -47,7 +48,7 @@ public class TestBase {
         Attach.screenshotAs("Test screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        Attach.addVideo();
+        Attach.addVideo(selenoidURL);
         closeWebDriver();
     }
 
