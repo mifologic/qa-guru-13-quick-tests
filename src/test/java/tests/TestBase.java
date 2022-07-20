@@ -25,22 +25,27 @@ public class TestBase {
 
         String login = config.login();
         String password = config.password();
+        String browserName = config.browserName();
+        String browserVersion = config.browserVersion();
+        String baseUrl = config.baseUrl();
+        String browserSize = config.browserSize();
         selenoidURL = System.getProperty("selenoidURL");
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        Configuration.baseUrl = "https://www.sportmaster.ru";
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://" + login + ":" + password + "@" + selenoidURL;
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("browserVersion", "100.0");
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", true,
-                "enableVideo", true
-        ));
-        Configuration.browserCapabilities = capabilities;
+        Configuration.baseUrl = baseUrl;
+        Configuration.browserSize = browserSize;
+        if(selenoidURL != null) {
+            Configuration.remote = "https://" + login + ":" + password + "@" + selenoidURL;
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("browserName", browserName);
+            capabilities.setCapability("browserVersion", browserVersion);
+            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
+            Configuration.browserCapabilities = capabilities;
+        }
     }
 
     @AfterEach
