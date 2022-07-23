@@ -2,7 +2,7 @@
 
 Проект выполнен в рамках курса по автоматизации школы <a href="https://qa.guru">QA.Guru</a>.
 
-<img src="/images/reports/sportmaster.png">
+<img src="/images/sportmaster.png">
 
 ## Содержание:
 
