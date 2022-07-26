@@ -61,7 +61,7 @@
 
 ## Интеграция с Allure TestOps
 
-<img src="/images/reports/testOps_report.png">
+<img src="/images/reports/testops_report.png">
 <img src="/images/reports/testOps_2.png">
 
 ## Allure отчет
