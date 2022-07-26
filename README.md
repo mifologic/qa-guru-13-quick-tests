@@ -8,8 +8,9 @@
 
 * <a href="#link-технологии-и-инструменты">Технологии и инструменты</a>
 * <a href="#link-реализованные-проверки">Реализованные проверки</a>
-* <a href="#link-сборка-в-jenkins">Сборка в Jenkins</a>
 * <a href="#link-запуск-из-инструменты-командной-строки">Запуск из командной строки</a>
+* <a href="#link-сборка-в-jenkins">Сборка в Jenkins</a>
+* <a href="#link-интеграция-с-allure-testOps">Интеграция с Allure TestOps</a>
 * <a href="#link-allure-отчет">Allure отчет</a>
 * <a href="#link-отчет-в-telegram">Отчет в Telegram</a>
 * <a href="#link-видео-прохождения-тестов">Видео прохождения тестов</a>
@@ -57,6 +58,11 @@
 Для удалённого запуска можно настроить запуск в Jenkins. Пример прогона:
 
 <img src="/images/reports/jenkins_report.png">
+
+## Интеграция с Allure TestOps
+
+<img src="/images/reports/testOps_report.png">
+<img src="/images/reports/testOps_2.png">
 
 ## Allure отчет
 Результат прогона тестов можно посмотреть в отчёте. Информация в тесте представлена в виде шагов с действиями.

@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.AllureId;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,7 +13,10 @@ public class ChangeCityTest extends TestBase {
     String city = "Нижний Новгород";
 
     @Test
+    @AllureId("11656")
     @DisplayName("Изменение города")
+    @Owner("allure8")
+    @Feature("Тестирование сайта sportmaster.ru")
     public void userCanChangeCity() {
         mainPage.openMainPage()
                 .openSelectCityForm()

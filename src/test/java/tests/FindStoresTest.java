@@ -16,7 +16,10 @@ public class FindStoresTest extends TestBase {
     String storeTwoName = "ТРК «Метрополис»";
 
     @Test
+    @AllureId("11672")
     @DisplayName("Поиск магазинов")
+    @Owner("allure8")
+    @Feature("Тестирование сайта sportmaster.ru")
     public void storesShouldBeFoundByAddress() {
         storesPage.openStoresPage()
                 .addStreetName(address)
