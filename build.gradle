@@ -35,7 +35,9 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
-            "com.github.javafaker:javafaker:$javafakerVersion"
+            "com.github.javafaker:javafaker:$javafakerVersion",
+            "commons-io:commons-io:2.6",
+            "io.qameta.allure:allure-java-commons:2.14.0"
     )
 }
 

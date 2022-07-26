@@ -23,6 +23,7 @@
 <img width="6%" src="/images/icons/Intelij_IDEA.svg">
 <img width="6%" src="/images/icons/Gradle.svg">
 <img width="6%" src="/images/icons/JUnit5.svg">
+<img width="6%" src="/images/icons/Jenkins.svg">
 <img width="6%" src="/images/icons/Selenide.svg">
 <img width="6%" src="/images/icons/Selenoid.svg">
 <img width="6%" src="/images/icons/GitHub.svg">
