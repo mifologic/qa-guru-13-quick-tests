@@ -12,9 +12,9 @@ public class ChangeCityTest extends TestBase {
     String city = "Нижний Новгород";
 
     @Test
-//    @AllureId("11656")
+    @AllureId("11656")
     @DisplayName("Изменение города")
-//    @Owner("allure8")
+    @Owner("allure8")
     public void userCanChangeCity() {
         mainPage.openMainPage()
                 .openSelectCityForm()
