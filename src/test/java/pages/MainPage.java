@@ -23,7 +23,7 @@ public class MainPage {
     @Step("Ввести название города")
     public MainPage addCity(String city) {
         $("[data-selenium=\"top-cities-list\"]").$(byText(city)).click();
-        sleep(2000);
+        sleep(2000); // без явного ожидания тест падает, другие варианты также не срабатывают
         return this;
     }
 
