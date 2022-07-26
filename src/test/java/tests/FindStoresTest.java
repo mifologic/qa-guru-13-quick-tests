@@ -1,5 +1,8 @@
 package tests;
 
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.StoresPage;
@@ -13,7 +16,10 @@ public class FindStoresTest extends TestBase {
     String storeTwoName = "ТРК «Метрополис»";
 
     @Test
-    @DisplayName("Поиск магазинов по адресу")
+    @AllureId("11672")
+    @DisplayName("Поиск магазинов")
+    @Owner("allure8")
+    @Feature("Тестирование сайта sportmaster.ru")
     public void storesShouldBeFoundByAddress() {
         storesPage.openStoresPage()
                 .addStreetName(address)

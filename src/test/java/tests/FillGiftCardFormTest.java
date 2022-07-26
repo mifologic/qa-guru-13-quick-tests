@@ -1,5 +1,8 @@
 package tests;
 
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import pages.GiftCardPage;
@@ -17,7 +20,10 @@ public class FillGiftCardFormTest extends TestBase {
 
 
     @Test
-    @DisplayName("Заполнение формы подарочной карты")
+    @AllureId("11671")
+    @DisplayName("Оформление подарочной карты")
+    @Owner("allure8")
+    @Feature("Тестирование сайта sportmaster.ru")
     public void userGoToPaymentPageAfterFillForm() {
         giftCardPage.openPage()
                 .addRecipientPhoneNumber(recipientPhone)
